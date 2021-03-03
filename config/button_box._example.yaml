@@ -1,0 +1,12 @@
+# A two buttons box example
+# Buttons are connected to GPIO 4 and GPIO 27 (using BCM numbering)
+
+# Button 1
+button_1:
+    input_pin: 4          #using BCM numbering
+    topic_id: button_1    #ROS topic name
+    
+# Button 2
+button_2:
+    input_pin: 27         #using BCM numbering
+    topic_id: button_2    #ROS topic name

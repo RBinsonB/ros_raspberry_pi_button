@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- An example launch file for a two buttons box -->
+
+<launch>
+  <!-- Button box node -->
+  <node name="button_box" pkg="raspberry_pi_button" type="button_node.py">
+    <!-- load button configurations -->
+    <rosparam command="load" file="$(find raspberry_pi_button)/config/button_box_example.yaml" />
+  </node>
+</launch>

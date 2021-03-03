@@ -45,6 +45,10 @@ class ButtonBox():
             # Log about button
             rospy.loginfo("%s: connecting button on GPIO %i to topic %s%s" % (rospy.get_name(), input_pin, rospy.get_namespace(), topic_id))
 
+    # If no button has been configured, send warning
+    if not self.button_box_dict:
+        rospy.logerr("%s: button node has been launched but no valid button configuration has been defined" % (rospy.get_name()))
+        raise ValueError("no button config defined")
 
 #==============================
 #             Main
@@ -55,6 +59,6 @@ if __name__ == '__main__':
         button_box = ButtonBox()
         rospy.spin()
     except ValueError as e:
-        rospy.logerr("%s: %s" %(rospy.get_name(), e))
+        rospy.logerr("%s: shutting down, %s" %(rospy.get_name(), e))
         sys.exit(0)
     
