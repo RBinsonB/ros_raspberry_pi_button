@@ -3,7 +3,7 @@
 
 <launch>
   <!-- Button box node -->
-  <node name="button_box" pkg="raspberry_pi_button" type="button_node.py">
+  <node name="button_box" pkg="raspberry_pi_button" type="button_node.py" output="screen">
     <!-- load button configurations -->
     <rosparam command="load" file="$(find raspberry_pi_button)/config/button_box_example.yaml" />
   </node>
