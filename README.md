@@ -5,6 +5,7 @@ A ROS package to interface a button to a ROS topics using a Raspberry Pi GPIO. P
 
 <a href="url"><img src="/documentation/pictures/button_box.jpg" align="center" height="300" width="400"></a>
 <a href="url"><img src="/documentation/pictures/button_box_pushed.jpg" align="center" height="300" width="400"></a>
+
 *Example of button box using a Raspberry Pi 3B+ and homemade case*
 
 ### License
@@ -35,6 +36,7 @@ catkin_make
 Connect any number of buttons to GPIO pins of the Raspberry Pi. Each button should supply 5V (from the Raspberry Pi 5V pins or other) to the input pin. The code provided here will read the pin value and uses Raspberry Pi internal pull-down resistors.
 
 <a href="url"><img src="/documentation/pictures/button_box_internal.jpg" align="center" height="525" width="700"></a>
+
 *Button wiring example for two buttons and a Raspberry Pi 3B+*
 
 ### Setting up the Raspberry Pi ROS environment
