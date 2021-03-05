@@ -18,7 +18,8 @@ Package has to be launched from a Raspberry Pi. Has been tested on Raspberry Pi 
 - [Robot Operating System (ROS)](http://wiki.ros.org)
 
 - [RPi.GPIO](https://sourceforge.net/p/raspberry-gpio-python/wiki/Inputs/)
-	`sudo apt install rpi.gpio`
+
+  Install using `sudo apt install rpi.gpio`
 
 ### Building
 To build the package, clone the current repository in your catkin workspace and build it.
@@ -48,6 +49,7 @@ It is assumed that the ROS master is running on another computer on the same net
   Set the ROS_IP to the Raspberry Pi IP (replacing <rpi-ip> by the proper Raspberry Pi IP): `export ROS_IP=<rpi-ip>`
 
 * **From the ROS master computer**
+
   Set the ROS_IP to the ROS master computer IP (replacing <ros-master-ip> by the proper ROS master computer IP): `export ROS_IP=<ros-master-ip>`
 
 ## Usage
